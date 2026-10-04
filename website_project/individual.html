@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adventure Escape SA — Item Details</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav-logo">
+        <div class="placeholder placeholder--circle"><img src="images/logo.jpg"alt="nav-logo">
+        </div>
+        Adventure Escape SA
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="overview.html" class="active">Packages</a></li>
+        <li><a href="overview.html">Activities</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="overview.html" class="btn btn-primary">Book Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> / <a href="overview.html">Packages</a> / <span id="breadcrumbItem">Item</span>
+      </div>
+
+      <div class="detail-layout">
+        <!-- Left: image + "you may also like" -->
+        <div>
+          <div class="placeholder placeholder--wide" style="min-height: 360px;">ACTIVITY PHOTO</div>
+
+          <h2 style="margin-top: 32px;">You May Also Like</h2>
+          <div class="grid grid-3" id="alsoLikeGrid"></div>
+        </div>
+
+        <!-- Right: details, filled in by js/script.js based on the ?item= URL parameter -->
+        <div>
+          <h1 id="itemName">Item</h1>
+          <div class="card-price" style="font-size: 1.4rem; margin-bottom: 16px;" id="itemPrice">R0</div>
+
+          <p id="itemDescription">Loading...</p>
+
+          <h3>What's Included</h3>
+          <ul class="included-list" id="itemIncludes"></ul>
+
+          <a href="calculate.html" class="btn btn-accent btn-block" style="margin-top: 20px;" id="bookingLink">Add to Booking</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Adventure Escape SA</strong>
+        <div class="footer-small">Western Cape, South Africa</div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="overview.html">Packages</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="footer-small">Instagram &middot; Facebook</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

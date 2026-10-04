@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adventure Escape SA — Calculate Fee</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav-logo">
+        <div class="placeholder placeholder--circle"><img src="images/logo.jpg"alt="nav-logo">
+        </div>
+        Adventure Escape SA
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="overview.html">Packages</a></li>
+        <li><a href="overview.html">Activities</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="overview.html" class="btn btn-primary">Book Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="eyebrow">Calculate Fee</div>
+      <h1>Review your booking</h1>
+      <p style="color: var(--color-gray-500); margin-bottom: 28px;">
+        Adjust quantities below — the discount and total update automatically.
+      </p>
+
+      <div class="calc-layout">
+        <!-- Left: selected items -->
+        <div>
+          <div id="calcItems">
+            <!-- Items are rendered by js/script.js from the DATA array so
+                 quantities and totals stay in sync. Edit the DATA array
+                 at the top of that file to change the demo items/prices. -->
+          </div>
+
+          <div class="discount-progress">
+            <div class="progress-label" id="progressLabel">Discount progress: 0 bookings</div>
+            <div class="progress-track">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+          </div>
+
+          <h2 style="margin-top: 32px;">You May Also Like</h2>
+          <div id="calcAlsoLike">
+            <div class="Ultimate Adventure Day"></div><img src="images/Ultimate.jpg"alt="Ultimate-Adventure-Day">
+          </div>
+        </div>
+
+        <!-- Right: quotation summary -->
+        <div>
+          <div class="summary-card">
+            <h3>Quotation Summary</h3>
+
+            <div class="summary-row">
+              <span>Subtotal (<span id="summaryCount">0</span> bookings)</span>
+              <span id="summarySubtotal">R0</span>
+            </div>
+            <div class="summary-row">
+              <span>Discount (<span id="summaryDiscountPct">0%</span>)</span>
+              <span id="summaryDiscount">&minus; R0</span>
+            </div>
+            <div class="summary-row">
+              <span>VAT (15%)</span>
+              <span id="summaryVat">R0</span>
+            </div>
+            <div class="summary-row total">
+              <span>Total</span>
+              <span id="summaryTotal">R0</span>
+            </div>
+
+            <a href="contact.html" class="btn btn-primary btn-block" style="margin-top: 16px;">Proceed to Booking</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Adventure Escape SA</strong>
+        <div class="footer-small">Western Cape, South Africa</div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="overview.html">Packages</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="footer-small">Instagram &middot; Facebook</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

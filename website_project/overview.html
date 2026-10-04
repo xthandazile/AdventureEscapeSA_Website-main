@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adventure Escape SA — Packages &amp; Activities</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav-logo">
+        <div class="placeholder placeholder--circle"><img src="images/logo.jpg"alt="nav-logo">
+        </div>
+        Adventure Escape SA
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="overview.html" class="active">Packages</a></li>
+        <li><a href="overview.html" class="active">Activities</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="overview.html" class="btn btn-primary">Book Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="eyebrow">Overview</div>
+      <h1>Packages &amp; Activities</h1>
+
+      <!-- Tabs: toggled by js/script.js -->
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="packages">Adventure Packages</button>
+        <button class="tab-btn" data-tab="activities">Individual Activities</button>
+      </div>
+
+      <!-- Packages tab -->
+      <div class="tab-panel grid grid-3 active" id="packages">
+        <div class="card">
+          <div class="placeholder placeholder--wide">IMAGE
+            <img src="images/Family.jpeg"alt="family-explorer">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Family Explorer Package</h3>
+            <div class="card-price">R1 500</div>
+            <a href="individual.html?item=family-explorer" class="btn btn-outline btn-block">View Details</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="placeholder placeholder--wide">IMAGE
+            <img src="images/Ultimate 2.jpg"alt="ultimate-adventure-day">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Ultimate Adventure Day</h3>
+            <div class="card-price">R1 500</div>
+            <a href="individual.html?item=ultimate-adventure-day" class="btn btn-outline btn-block">View Details</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="placeholder placeholder--wide">IMAGE
+            <img src="images/hiking.jpeg"alt="mountain-adventure">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Mountain Adventure Package</h3>
+            <div class="card-price">R1 500</div>
+            <a href="individual.html?item=mountain-adventure" class="btn btn-outline btn-block">View Details</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="placeholder placeholder--wide">IMAGE
+            <img src="images/Team.jpeg"alt="corporate-team-challenge">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Corporate Team Challenge</h3>
+            <div class="card-price">R1 500</div>
+            <a href="individual.html?item=corporate-team-challenge" class="btn btn-outline btn-block">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Activities tab -->
+      <div class="tab-panel grid grid-3" id="activities">
+        <div class="card">
+          <div class="placeholder placeholder--wide">IMAGE
+            <img src="images/ziplining.jpeg"alt="Ziplining Adventure">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Ziplining Adventure</h3>
+            <div class="card-price">R750</div>
+            <a href="individual.html?item=ziplining" class="btn btn-outline btn-block">View Details</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="placeholder placeholder--wide">IMAGE
+            <img src="images/kayaking.jpeg"alt="Kayaking Experience">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Kayaking Experience</h3>
+            <div class="card-price">R750</div>
+            <a href="individual.html?item=kayaking" class="btn btn-outline btn-block">View Details</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="placeholder placeholder--wide">IMAGE
+            <img src="images/Rock.jpeg"alt="rock-climbing">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Rock Climbing Session</h3>
+            <div class="card-price">R750</div>
+            <a href="individual.html?item=rock-climbing" class="btn btn-outline btn-block">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Adventure Escape SA</strong>
+        <div class="footer-small">Western Cape, South Africa</div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="overview.html">Packages</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="footer-small">Instagram &middot; Facebook</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
